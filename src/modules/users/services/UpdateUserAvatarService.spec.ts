@@ -46,11 +46,6 @@ describe('UpdateUserAvatar', () => {
   it('should delete avatar when updating new one', async () => {
     const deleteFile = jest.spyOn(fakeStorageProvider,'deleteFile');
 
-    const UpdateUserAvatar = new UpdateUserAvatarService(
-      fakeUsersRepository,
-      fakeStorageProvider
-    );
-
     const user = await fakeUsersRepository.create({
       name: 'John Doe',
       email: 'johndoe@example.com',
