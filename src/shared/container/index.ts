@@ -16,21 +16,21 @@ import INotificationsRepository from '@modules/notifications/repositories/INotif
 import NotificationsRepository from '@modules/notifications/infra/typeorm/repositories/NotificationsRepository';
 
 container.registerSingleton<IAppointmentsRepository>(
-    'AppointmentsRepository',
-    AppointmentsRepository,
+  'AppointmentsRepository',
+  AppointmentsRepository,
 );
 
 container.registerSingleton<IUsersRepository>(
-    'UsersRepository',
-    UsersRepository,
+  'UsersRepository',
+  UsersRepository,
 );
 
 container.registerSingleton<IUserTokensRepository>(
-    'UserTokensRepository',
-    UserTokensRepository,
+  'UserTokensRepository',
+  UserTokensRepository,
 );
 
 container.registerSingleton<INotificationsRepository>(
-    'NotificationsRepository',
-    NotificationsRepository,
+  'NotificationsRepository',
+  NotificationsRepository,
 );
