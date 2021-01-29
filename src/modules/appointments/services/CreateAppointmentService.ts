@@ -37,7 +37,7 @@ class CreateAppointmentService {
       throw new AppError(`You can't create an appointment on a past date`);
     }
 
-    if (user_id == provider_id) {
+    if (user_id === provider_id) {
       throw new AppError(`You can't create an appointment with yourself`);
     }
 
